@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+        table, th, td{
+          border: 1px solid black;
+          border-collapse: collapse;
+          font-size: 20px;
+          padding: 10px;
+          width: 30%;
+        }  
+        td{
+          text-align: center;
+        }
+        table, caption{
+            font-size: x-large;
+            padding-bottom: 10px ;
+        }
+  </style>
+
+</head>
+<body>
+
+    <h2>PRE TAG : -</h2>
+    <pre >The 'pre tag' in HTML is used to display preformatted text, preserving whitespace, 
+        line breaks, and indentation as they appear in the source code..</pre> 
+
+        <pre class="code-snippet" id="example" title="Example of preformatted text">
+            function helloWorld() {
+                console.log("Hello, World!");
+            }
+        </pre>
+
+
+
+    <h2>Time TAG : -</h2>
+    <small>The 'time tag' in HTML is used to represent a specific time or date, 
+        either as a machine-readable value or for human-readable content.</small>
+        <br>
+        <time datetime="2024-11-21T14:00">November 21, 2024, 2:00 PM</time>
+        <br>
+        <br>
+        
+
+
+    <h2>Table : -</h2>
+
+        <!-- table block element but except : width till contents only-->
+    <table> <!-- alternate to border attribute is CSS-->
+        <caption> <b> Trainer Informations </b> </caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Id</th> 
+                <th colspan="2">Name</th> 
+                <th rowspan="2">Department</th> 
+                <th colspan="2">Experience (In Years)</th>
+            </tr>
+
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Teaching</th> 
+                <th>Development</th>
+            
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr><td>1001</td> <td>Shahrukh</td> <td>Bhai</td> <td>Sociology</td> <td>23</td> <td>15</td> </tr>
+            <tr><td>1002</td> <td>Sallu</td>   <td>Miya</td>  <td>Bilogy</td>    <td>24</td> <td>14</td> </tr>
+            <tr><td>1003</td> <td> Ameer </td> <td>Jaan</td>  <td>Health</td>    <td>18</td> <td>9</td>  </tr>
+            <tr><td>1004</td> <td>Akki</td>    <td>Singh</td> <td>Karate</td>    <td>20</td> <td>13</td>  </tr>
+        </tbody>
+
+        <tfoot>
+            <tr><td colspan="6"> All the Employees are from Bollywood</td></tr>
+        </tfoot>
+
+    </table>
+
+
+</body>
+</html>
