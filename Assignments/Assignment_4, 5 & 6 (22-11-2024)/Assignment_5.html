@@ -1,0 +1,63 @@
+<!-- Assignment-5 Create form to generate time table for CS department. 
+        Form must take input as teacher id, name, subject (select tag), day (select tag), 
+        date, time of lecture, lunch break time . Time must include "from" to "to " duration  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CS Department (Time Table Form) </title>
+</head>
+<body>
+    <form >
+
+        <h2> CS Department (Time Table Form) </h2>
+
+        <label for="ID">Teacher ID :  </label>
+        <input type="number" name="TeacherID" id="ID" minlength="10" maxlength="10" required> <br><br>
+
+        <label for="mobile">Enter mobile number </label><input type="tel" pattern="[0-9]*"  minlength="10" maxlength="10" id="mobile" required><br><br>
+
+        <label>Name : </label>
+        <input name="employeename" id="fname" pattern="[A-Za-z ]*" placeholder="first name" required /> <!-- type="text"-->
+        <input name="employeename"  placeholder="Last name" type="" required><br><br>
+
+        <label for="Subject">Subject : </label>  <!-- Drop Down Menu -->
+        <select id="Subject" required>
+            <option value="ML">Machine Learning</option>
+            <option value="DL">Deep Learning</option>
+            <option value="GenAI"> Gen AI</option>
+            <option value="sql">SQL</option>
+        </select><br><br>
+
+        <label for="Day">Day : </label>  <!-- Drop Down Menu -->
+        <select id="Day" required>
+            <option value="sun">Sunday</option>
+            <option value="mon">Monday</option>
+            <option value="tue">Tuesday</option>
+            <option value="wed">Wednesday</option>
+            <option value="thur">Thursday</option>
+            <option value="fri">Friday</option>
+            <option value="sat">Saturday</option>
+        </select><br><br>
+
+        <label for="date">Date : </label>
+        <input type="date" id="date"><br><br>
+
+        <label for="LectureTime">Lecture Time : </label>
+        <label>From</label> <input type="time" id="LectureTime">
+        <label>To</label> <input type="time" id="LectureTime"> <br><br>
+
+        <label for="LunchBreak">Lunch Time : </label>
+        <label>From</label> <input type="time" id="LunchBreak">
+        <label>To</label> <input type="time" id="LunchBreak"> <br><br>
+
+        <input type="reset" value="RESET"> <input type="submit" value="ENROLL"> 
+
+    </form>
+
+</body>
+</html>
