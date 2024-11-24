@@ -8,7 +8,7 @@
 
 <body>
 
-    <article>
+    <article style="border: 1px solid yellow;">
 
         <h2>Ordered List</h2>
         <h3>Hot Drinks</h3>
@@ -42,7 +42,7 @@
             </ol>
 
             <ol start="4" type="A" reversed>
-                <li>Tea</li>  <!-- type : 1-->
+                <li type="a">Tea</li>  <!-- type : 'a' - lowercase (means we can customise its own ranking by using numbers or alpahabets or roman letters) -->
                 <li>Coffee</li> 
                 <li>Lemon Tea</li>  
                 <li>Coffee</li> 
@@ -102,7 +102,7 @@
                     <li>Framework
                         <ul>
                             <li>Spring</li>
-                            <li>Libenate</li>
+                            <li>Hibernate</li>
                         </ul>
                     </li>
                 </ul>
@@ -117,7 +117,7 @@
                 <ul>
                     <li>Core Java</li>
                     <li>Advanced Java</li>
-                    <li>Framework</li>        <!-- Here is the mistake-->
+                    <li>Framework</li>        <!-- Here is the mistake, li is closed-->
                         <ul>
                             <li>Spring</li>
                             <li>Libenate</li>
@@ -127,7 +127,18 @@
             <li> c#</li>
         </ol>
 
-
+        <article>
+            <h1>New Features in HTML5</h1>
+            <section>
+              <h2>New Elements</h2>
+              <p>HTML5 introduces new elements like <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;header&gt;</code>.</p>
+            </section>
+            <section>
+              <h2>Multimedia Support</h2>
+              <p>The <code>&lt;video&gt;</code> element allows embedding video directly into web pages.</p>
+            </section>
+          </article>
+          
         
 </body>
 </html>
