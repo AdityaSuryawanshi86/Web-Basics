@@ -1,0 +1,46 @@
+<!-- Assignment-6 : Create 3 anchor tags for info about Manali, Kashmir, Goa. 
+                    Use any absolute path. When u click on link,  
+                    the web page should be embeded in iframe.  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-6 </title>
+</head>
+
+
+
+
+<body>
+    <h2><u>Assignment 6</u></h2>
+    <!-- First Link (Manali using iframe) -->
+    <a href="https://himachaltourism.gov.in/destination/manali/" target="iframe1"> Manali </a>
+    <iframe name="iframe1" src="about:blank"></iframe>
+    <br>
+
+
+    https://en.wikipedia.org/wiki/Manali,_Himachal_Pradesh
+    https://himachaltourism.gov.in/destination/manali/
+
+    <!-- Second Link (Kashmir using iframe) -->
+    <a href="https://en.wikipedia.org/wiki/Kashmir" target="iframe2"> Kashmir </a>
+    <iframe name="iframe2" src="about:blank"></iframe>
+    <br>
+    <!-- Third Link (Goa using iframe) -->
+    <a href="https://en.wikipedia.org/wiki/Goa" target="iframe2"><u>Goa using Iframe</u></a>
+    <iframe name="iframe2" src="about:blank"></iframe>
+    <br>
+    <!-- Third Link (Goa using embed) -->
+    <a href="https://en.wikipedia.org/wiki/Goa" onclick="loadEmbed()"><u>Goa using embed</u></a>
+    <embed id="embedContent" src="about:blank" type="text/html">
+</body>
+
+
+</body>
+
+</html>
