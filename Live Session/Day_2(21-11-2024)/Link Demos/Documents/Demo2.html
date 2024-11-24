@@ -8,16 +8,36 @@
 
 <body>
     <!-- absolute path : always fix, full path till page-->
-    <a href="https://www.google.co.in/">Go to google</a>
+    <h3>Absolute Path </h3>
+    <a href="https://www.google.co.in/">Go to google </a> <br><br>
 
+    <h3>Relative Path </h3>
     <!-- relative-->
-     <a href="../../5. TableDemo.html">Show Tables (Relative path)</a>
-     
-     <!-- This is not working (Check this out)-->
-     <a href="/home/neosoft/Documents/GitHub/Web-Basics/Live Session/Day_2(21-11-2024)/5. TableDemo.html">Show tables (absolute path)</a>
-    
+     <i>Previous to previous folder ("../../"):- </i> <br><br>
+     <a href="../../5. TableDemo.html">Show Tables (Previous to previous folder)</a> <br><br>
 
-     <!-- This is working -->
-     <a href="../../2. Headings.html">Heading page to open</a>
+     <a href="../../2. Headings.html">Heading page to open</a> <br><br>
+
+
+     <i>Accessing Different file within the same directory or folder  ("../" & "./"):- </i> <br><br>
+     <a href="../Documents/Demo1.html">Demo1</a>  <br>
+     <a href="./Demo1.html">Demo1</a>
+     <br><br>
+
+     <i>Just for Practice (Below links only opens respective directory and not the actual file):- </i> <br>
+     <a href=".">Rough1</a> <br>
+     <a href="..">Rough2</a> <br> <br>
+
+     <!-- This will not work on live so run without debugging on chrome-->
+     <i>Absolute path (Actual Folder Path):- </i>
+     <a href="/home/neosoft/Documents/GitHub/Web-Basics/Live Session/Day_2(21-11-2024)/5. TableDemo.html">Show tables </a>
+    
+     <br><br>
+
+
+
+
+
+
     </body>
 </html>
