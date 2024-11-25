@@ -11,6 +11,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-6 </title>
+
+    <style>
+        iframe {
+            display: block; 
+            width:100%; 
+            height:500px
+        }
+
+        body {
+            border: 5px double black;
+
+        }
+
+
+    </style>
+
 </head>
 
 
@@ -21,9 +37,10 @@
 
     <!-- Manali Page using iframe -->
     <a href="https://www.tourmyindia.com/hill_stations/manali.html" target="iframe1"> Manali Page </a>
-    <iframe name="iframe1" src="about:blank"></iframe>
+    <iframe name="iframe1" src="about:blank" ></iframe>
     <br>
 
+    <iframe name="iframe1" src="https://www.tourmyindia.com/hill_stations/manali.html" ></iframe>
 
     <!-- Kashmir Page using iframe -->
     <a href="https://www.britannica.com/place/Kashmir-region-Indian-subcontinent" target="iframe2"> Kashmir Page </a>
@@ -38,7 +55,7 @@
 
 
     <!-- embed -->
-    <a href="https://www.britannica.com/place/Kashmir-region-Indian-subcontinent" onclick="loadEmbed()"><u>Kashmir Page using embed</u></a>
+    <a href="https://www.britannica.com/place/Kashmir-region-Indian-subcontinent" target="embedContent"><u>Kashmir Page using embed</u></a>
     <embed id="embedContent" src="about:blank" type="text/html">
 </body>
 
