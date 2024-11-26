@@ -1,0 +1,88 @@
+<!-- Assignment 26-Nov: Arrange 3 Summary details tags in row of table - HTML, CSS, Javascript. 
+     When you click on summary. Article regarding the summary must be visible in same row. 
+     Article must contain sample code image, and short description -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        caption{
+            background-color: aqua;
+            background-size: 10px;
+            border: 1px solid black;
+        }
+
+        table, th{
+          border: 1px solid black;
+          border-collapse: collapse;
+          /* padding: 10px; */
+          width: 50%;
+          margin: auto;
+        }  
+
+        tr {
+            display: flex;
+            /* justify-content: space-between; */
+        }
+
+        img{
+            height: 300px;
+            width: 300px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table> <!-- alternate to border attribute is CSS-->
+        <caption> <h1> Different Languages </h1>  </caption>
+        <thead>
+            <tr><th> 
+                <details>
+                    <summary> HTML </summary>
+                    <div>
+                        <p> HTML (HyperText Markup Language) is the standard language used to create <br>
+                            and structure content on the web. <br> 
+                            It defines the structure of web pages using elements like headings, <br>
+                            paragraphs, links, and images. </p>
+                        <img src="./Images/HTML.png" alt="HTML">
+                    </div>
+                </details> </th> 
+
+                <th> 
+                    <details>
+                        <summary> CSS </summary>
+                        <div>
+                            <p> CSS (Cascading Style Sheets) is used to style and layout web pages, <br>
+                                controlling aspects like colors, fonts, and spacing. <br>
+                                It allows for the separation of content (HTML) from design, <br>
+                                making websites more visually appealing and responsive. </p>
+                            <img src="./Images/css.png" alt="CSS">
+                        </div>
+                    </details> </th> 
+
+                <th> 
+
+                    <details>
+                        <summary> JavaScript </summary>
+                        <div>
+                            <p> JavaScript is a programming language that enables dynamic behavior <br>
+                                and interactivity on web pages. <br>
+                                It allows developers to manipulate HTML and CSS, handle events, <br>
+                                and create responsive, interactive user experiences. </p>
+                            <img src="./Images/Javascript.png" alt="Javascript">
+                        </div>
+                    </details> </th> </tr>
+            
+        </thead>
+
+    </table>
+
+    
+</body>
+</html>
