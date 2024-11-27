@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter</title>
+    <style>
+        meter{
+            width: 50%;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Forward Meter</h2>
+    <label>Fuel Indicator (in ltr)</label>
+    <meter id="fuel" min="0" low="300" optimum="200" value="0" high="700" max="1000"></meter>
+    <button onclick="fill()">FILL FUEL</button>
+
+    <!-- if optimum is in the range of min to low then lower units are safer and 
+    higher are danger
+        (0 to low is safer,  above low to high is warning ,  above high is danger) -->
+
+
+    <!-- if optimum is in the range of high to max then higher units are safer and 
+     lower are danger
+        (o to below low : danger,  low to below high: warning,  high to max : safe) -->
+
+
+    <script>
+        function fill(){
+            let counter=0;
+            let interval=setInterval(()=>{
+                counter++;
+                console.log(counter);
+                document.getElementById("fuel").value=counter;
+                if(counter==1000)
+                    clearInterval(interval);
+            },10)
+        }
+    </script>
+
+<!-- 
+<h2>Reverse Meter</h2>
+<label>Fuel Indicator (in ltr)</label>
+<meter id="fuel" min="0" low="300" optimum="800" value="1000" high="700" max="1000"></meter>
+<button onclick="fill()">FILL FUEL</button> -->
+
+<!-- if optimum is in the range of min to low then lower units are safer and 
+higher are danger
+    (0 to low is safer,  above low to high is warning ,  above high is danger) -->
+
+
+<!-- if optimum is in the range of high to max then higher units are safer and 
+ lower are danger
+    (o to below low : danger,  low to below high: warning,  high to max : safe) -->
+
+
+<!-- <script>
+    function fill(){
+        let counter=1000;
+        let interval=setInterval(()=>{
+            counter--;
+            console.log(counter);
+            document.getElementById("fuel").value=counter;
+            if(counter==0)
+                clearInterval(interval);
+        },10)
+    }
+</script> -->
+
+
+</body>
+</html>
