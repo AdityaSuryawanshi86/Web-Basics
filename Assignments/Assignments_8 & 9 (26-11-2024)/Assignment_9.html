@@ -1,0 +1,57 @@
+<!-- Assignment 26-Nov: Display multiple different images on a webpage, also put captions. 
+     All images must be rounded (border-radius : 100%), 1st 3 images should have bigger size, 
+     last image must have double border, Show images in red border those do not have value 
+     in alt attribute -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        img {
+            border-radius: 100%;
+            height: 300px;
+            width: 300px;
+
+        }
+        
+
+        .double{
+            border: 10px double black;
+            border-radius: 100%;
+        }
+
+
+        [alt=""]{
+            border: 2px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <figure>
+        <figcaption><u>Nature</u></figcaption>
+        <img src="./Images/nature_1.jpeg" alt="">
+
+    </figure>
+
+    <figure>
+        <figcaption><u>Desert</u></figcaption>
+        <img src="./Images/nature_2.jpeg" alt="">
+
+    </figure>
+
+    <figure>
+        <figcaption><u>Sky</u></figcaption>
+        <img class="double" src="./Images/nature_3.jpg" alt="MS">
+
+    </figure>
+
+
+</body>
+</html>
