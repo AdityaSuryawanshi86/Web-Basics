@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUTPUT TAG</title>
+</head>
+
+<body>
+    <h2>onclick</h2>
+    <!-- <section>
+        <label>Enter your name :</label>
+        <input type="text" id="name">
+        <button onclick="convert()">CLICK</button>
+        <p>
+            Your name is : <b id="upper"></b>
+        </p>
+    </section> -->
+
+    <!-- We will learn this in Javascript -->
+    <!-- <script>
+        function convert(){
+            let myname=document.getElementById("name").value;
+            let upper=myname.toUpperCase();
+            document.getElementById("upper").textContent=upper;
+        }
+     </script> -->
+
+    <hr>
+    <h2>onsubmit</h2>
+    <!-- <section>
+        <form onsubmit="convert()">
+            <label for="name">Enter your Name :</label>
+            <input type="text" id="name">
+            <button type="submit">CLICK</button>
+            <p>
+                <span>Your name is : <b id="upper"></b></span>
+            </p>
+        </form>
+    </section> -->
+    <!-- we will learn below in javascript-->
+    <!-- <script>
+        function convert(){
+            event.preventDefault();
+            let myname=document.getElementById("name").value;
+            let upper=myname.toUpperCase();
+            document.getElementById("upper").textContent=upper;
+        }
+    </script> -->
+
+    <hr>
+
+     <h2>Use of output tag onsubmit</h2>
+    <!-- <section> 
+         <form onsubmit="event.preventDefault(); upper.value=name.value.toUpperCase()">
+            <label for="name">Enter your Name :</label>
+            <input type="text" id="name">
+            <button type="submit">CLICK</button>
+            <p>
+                <span>Your name is : <b> <output id="upper"></output> </b></span>
+            </p>
+        </form>
+    </section>  -->
+
+    <hr>
+    <h2>Use of output using onclick</h2>
+    <h5>Use Output Tag without form</h5>
+    <p>
+        When used outside a form, it can still be styled and
+        manipulated with JavaScript,
+        but it loses some of its intended semantic meaning.
+    </p>
+    <!-- not getting output for following code as the method is wrong -->
+    <!-- <section>
+        <label for="name">Enter your Name :</label>
+        <input type="text" id="name">
+        <button type="button" 
+        onclick="upper.value=document.getElementById('name').value.toUpperCase()">CLICK</button>
+        <p>
+            <span>Your name is : <b><output id="upper"></output></b></span>
+        </p>
+    </section> -->
+
+    <hr>
+    <h2>output using input event</h2>
+    <section>
+        <form oninput="event.preventDefault(); upper.value=name.value.toUpperCase()">
+            <label for="name">Enter your Name :</label>
+            <input type="text" id="name">
+            <button type="submit">CLICK</button>
+            <p>
+                <span>Your name is : <b> <output id="upper"></output> </b></span>
+            </p>
+        </form></section>
+</body>
+
+</html>
