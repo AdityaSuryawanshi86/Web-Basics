@@ -1,0 +1,70 @@
+<!-- Assignment 27-Nov: Design navbar with the help of combinators -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Text</title>
+
+    <style>
+
+        nav {
+            background-color: rebeccapurple;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        nav ol {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ol li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ol li a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        /*  select descandent (direction direct) paragraph of parent and style then  */
+
+         #parent ol {
+            background-color: pink;
+        }
+
+        #parent li {
+            background-color: red;
+            text-transform: uppercase;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <nav id="parent">
+        <ol>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">IMAGE GALLARY</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ol>
+    </nav>
+
+
+</body>
+
+</html>

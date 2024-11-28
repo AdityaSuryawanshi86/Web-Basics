@@ -1,0 +1,48 @@
+<!-- Assignment 27 Nov : implement a code on repeated linear gradients  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10</title>
+</head>
+<style>
+    .gradient-text {
+        font-size: 3em;
+        font-weight: bold;
+        background: linear-gradient(orange, white, green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        /* -webkit-background-clip: text;: Clips the background to the text content.
+                -webkit-text-fill-color: transparent;
+                : Makes the text itself transparent so the background gradient shows through. */
+    }
+
+
+    #rep {
+        height: 200px;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-image: repeating-linear-gradient(90deg, black, white , black 20%);
+    }
+</style>
+
+<body>
+
+
+
+
+    <body>
+
+        <h1>Gradient Text Example</h1>
+        <h1 class="gradient-text"> Aditya Suryawanshi </h1>
+        <!-- https://www.geeksforgeeks.org/how-to-create-linear-gradient-text-using-html-and-css/ -->
+
+
+        <h1>Repeating Linear Gradient</h1>
+        <div id="rep" ></div>
+    </body>
+
+</html>
