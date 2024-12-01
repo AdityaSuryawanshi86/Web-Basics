@@ -1,0 +1,54 @@
+<!-- Assignment 29-Nov : Implement background short hand property
+
+background: #ffffff url("img_tree.png") no-repeat right top;
+
+background: left/ 15% 60% repeat-x url("../../media/examples/star.png");
+
+center/80%  : position and size
+
+background: left 2%/ 20% 60% repeat-x url("../../media/examples/star.png"); -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_15</title>
+    <style>
+    .box1 {
+      width: 400px;
+      height: 400px;
+      border: 1px solid #000;
+      margin: 20px;
+      background: rgb(187, 76, 25) url("./Images/Image_1.jpg") no-repeat right top;
+    }
+
+    .box2 {
+      width: 400px;
+      height: 400px;
+      border: 1px solid #000;
+      margin: 20px;
+      /* background-image: url("../images/download.jpeg");
+      background-position: left 50%;
+      background-size: 10% 60%;
+      background-repeat: repeat-x; */
+      background: left 50%/ 10% 60% repeat-x url("./Images/Image_2.jpg");
+    }
+
+    .box3 {
+      width: 400px;
+      height: 400px;
+      border: 1px solid #000;
+      margin: 20px;
+      background: left 2%/ 20% 60% repeat-x url("./Images/Image_3.jpg");
+    }
+
+    </style>
+</head>
+<body>
+    <div class="b1">Abhi</div>
+    <div class="b2">Vipul</div>
+    <div class="b3">Shubham</div>
+</body>
+</html>

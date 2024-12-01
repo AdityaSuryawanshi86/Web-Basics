@@ -1,0 +1,51 @@
+<!-- Assignment 29-Nov :
+
+Create Ordered List for 5 Veg starter items 
+
+
+put different color and font size for 1st and last li
+
+make text italic for 4th li -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        div{
+            /* place-items: center; */
+            margin: 10px;
+            padding: 10px;
+        }
+        ol>li:first-child{
+            color: rgb(73, 187, 177);
+            font-size: 40px;
+            padding: 10px;
+        }
+        ol>li:last-child{
+            color: rgb(34, 50, 143);
+            font-size: 40px;
+            padding: 10px;
+        }
+        li:nth-child(4){
+            font-style: italic;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>VEG STARTERS</h3>
+        <ol>
+            <li>Chana Garlic</li>
+            <li>Crispy Corn</li>
+            <li>Paneer Chilli</li>
+            <li>Masala Papad</li>
+            <li>Potato Chilli</li>
+        </ol>
+    </div>
+</body>
+</html>
