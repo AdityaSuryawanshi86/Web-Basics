@@ -5,47 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         nav{
+        
+        nav{
             background-color: lightblue;
             border : 2px solid 
         }
+
         nav li {
             display: inline-block;
         }
+
         nav a{
             color: white;
             text-decoration: none;
             padding: 15px;
         }
+
         a:link{
             color: yellow;
         }
+        
         a:visited{
             color: green;
         }
+
         a:hover{
             background: gray;
         }
+
         a:active{
             background-color: pink;
         }
+
+        /* Styling a particular element without using id or class */
+
         table,th,td{
             border: 2px solid;
             border-collapse: collapse;
             padding: 5px;
             width: 50%;
         }
+
         tr{
             background-color: lightsalmon;
         }
-        /*1st tr having inside thead diff background*/
+
+        /*1st tr having inside thead different background*/
+
         thead>tr:first-child{
             background: lightgreen;
         }
+
         /*inside parent tfoot, where tr is last child, put background darkcyan there */
         tfoot>tr:last-child{
             background: darkcyan;
         }
+
+        /* nth child */
         tr:nth-child(3){
             background: lightgray;
         }
@@ -53,19 +69,26 @@
         #lataji{
             border: 2px solid pink;
         }
+
         /*set background color to first child of article*/
         article>*:first-child{
             background: darkcyan;
         }
+
         article>*:last-child{
             background: darkgreen;
         }
+
+        /* article as a last child  */
         article:last-child{
             background-color:red;
         }
+
         tbody>tr:first-child>td:first-child{
             background-color: blue;
         }
+
+
     </style>
 </head>
 <body>
