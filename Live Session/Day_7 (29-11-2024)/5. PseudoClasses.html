@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         nav{
+            background-color: lightblue;
+            border : 2px solid 
+        }
+        nav li {
+            display: inline-block;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+        }
+        a:link{
+            color: yellow;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            background: gray;
+        }
+        a:active{
+            background-color: pink;
+        }
+        table,th,td{
+            border: 2px solid;
+            border-collapse: collapse;
+            padding: 5px;
+            width: 50%;
+        }
+        tr{
+            background-color: lightsalmon;
+        }
+        /*1st tr having inside thead diff background*/
+        thead>tr:first-child{
+            background: lightgreen;
+        }
+        /*inside parent tfoot, where tr is last child, put background darkcyan there */
+        tfoot>tr:last-child{
+            background: darkcyan;
+        }
+        tr:nth-child(3){
+            background: lightgray;
+        }
+
+        #lataji{
+            border: 2px solid pink;
+        }
+        /*set background color to first child of article*/
+        article>*:first-child{
+            background: darkcyan;
+        }
+        article>*:last-child{
+            background: darkgreen;
+        }
+        article:last-child{
+            background-color:red;
+        }
+        tbody>tr:first-child>td:first-child{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ol>
+            <li><a href="https://www.culturalindia.net/indian-music/indian-singers/lata-mangeshkar.html">Lata Mangeshkar</a></li>
+            <li><a href="https://starsunfolded.com/asha-bhosle/">Asha Bhosale</a></li>
+            <li><a href="#">Shreya Goshal</a></li>
+            <li><a href="#">Sunidhi Chouhan</a></li>
+        </ol>
+    </nav>
+<hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+              </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr><td colspan="3">This is footer</td></tr>
+            <tr><td colspan="3">This is footer</td></tr>
+            <tr><td colspan="3">This is footer</td></tr>
+        </tfoot>
+      </table>
+    <hr>
+    <article id="lataji">
+        <header>
+            <h2>Lata Mangeshkar</h2>
+        </header>
+        <section>
+            <h3>Personal Life</h3>
+        </section>
+        <section>
+            <h3>Career</h3>
+        </section>
+        <footer>
+            <a href="#">More info about Lata ji</a>
+        </footer>
+    </article>
+</body>
+</html>

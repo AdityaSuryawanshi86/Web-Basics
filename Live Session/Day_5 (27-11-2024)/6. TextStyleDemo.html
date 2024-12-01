@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TextStyle</title>
     <style>
-        *{
-             border: 1px solid; 
+        * {
+            border: 1px solid;
         }
-        h3{
+
+        h3 {
             color: red;
-            /*text-decoration-line, 
-            text-decoration-style , 
-            text-decoration-color
-            text-decoration-thickness*/
-            text-decoration: underline wavy yellow 5px; 
+            text-decoration-line: underline;
+            text-decoration-style: dotted;
+            text-decoration-color: blue;
+            text-decoration-thickness: 5px;
+            /* text-decoration: underline wavy yellow 5px;  */          /*short hand property*/
+
             text-transform: capitalize;
-            /* font-size: 40px;
-            font-weight: lighter;
+            /* Only first letter capitalize */
+            font-size: 40px;
+            font-weight: bolder;
             font-style: italic;
-            font-family: Arial, Helvetica, sans-serif; */
-            font:italic lighter 50px Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
+            /* font:italic lighter 50px Arial, Helvetica, sans-serif; */         /*short hand property*/
             text-shadow: 10px 10px 15px blue; /*r, b, spreading, color*/
+
         }
-        section{
+
+        section {
             text-align: center;
         }
-        div{
+
+        div {
             font-family: Arial, Helvetica, sans-serif
         }
-        #stretch{
-            font-stretch: condensed; 
+
+        #stretch {
+            font-stretch: condensed;
         }
+
     </style>
 </head>
+
 <body>
     <b>India is my country</b>
+
     <section>
         <h3>india</h3>
         <i>India is my country</i>
     </section>
+
     <div>
         <span>CSS is Cascaded Style sheets to apply good look and feel to a web page</span>
     </div>
+
     <div id="stretch">
         <span>CSS is Cascaded Style sheets to apply good look and feel to a web page</span>
     </div>
+
 </body>
+
 </html>

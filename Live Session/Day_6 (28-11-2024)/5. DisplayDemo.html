@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Demo</title>
+    <style>
+        /*block level elements span to full of their parent,
+        they always start at new line. We can give custom height and width to them*/
+
+            /*inline level elements span till their contents,
+        come in one line till space is there.  height and width not applicable to to them*/
+        .block{
+            border: 3px double darkmagenta;
+            width: 40%;
+            margin: 10px;
+             display: inline-block;  /*block level elements comes in one line (one-line)+(height) and width*/
+            /*  display:inline */  ; /*block level elements converted to inline elements one-line (h and w not applicable)*/
+        }
+
+        #block1 .inline{
+            border: 3px double darkgoldenrod;
+            width: 40%;
+            /* display: inline-block; */ /*oneline + height & width applicable*/
+            display:block; /*inline elements converted to block*/
+        }
+
+        #block5{
+            background-color: white;
+        }
+
+        body{
+            background-color: lightgrey;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="block" id="block1">
+       <b class="inline">display: block => inline elements can be converted to block level</b>
+      <i class="inline"> when converted they starts at new line and height and width is applicable.</i>
+     </section>
+
+     <section class="block" id="block2">
+        display : inline-block => its mixture of inline and block properties.
+     </section>
+
+     <section class="block" id="block3">
+        inline block elements come in one line but height and width is applicable
+     </section>
+
+     <section class="block" id="block4">
+        display : inline => block elements can be converted to line.
+     </section>
+     
+     <section class="block" id="block5">
+        <h4>Dadar, Mumbai (Headquarters)</h4>
+        <div>   
+            <address>
+                The Ruby Tower, Senapati Bapat Marg, Dadar West, Mumbai, Maharashtra 400028
+            </address>
+        </div>
+    </section>
+
+</body>
+</html>
