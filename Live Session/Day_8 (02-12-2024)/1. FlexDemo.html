@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Container</title>
+    <style>
+        .employeepic{
+            height: 200px;
+            width: 200px;
+        }
+
+        #employee-card>div{
+            border: 2px solid red;
+        }
+
+        /*flex-container, flex-items*/
+        #employee-card{
+            height: 1000px; /*childs get auto stretched according to parent height*/
+            border: 4px double green;
+            display: flex;
+            flex-wrap: wrap; /*nowrap*/
+            flex-direction: row; /*row*/
+            justify-content: center; /*if direction is row then row center, row start, row end
+            if direction is column then column center, column start column-end*/
+            /*if flex direction is row then : horizontal alignment is done using
+            justify content, & vertical aligment is done using align-items*/
+            align-items: start; /*def:stretch, items come in vertically center/start/end at parent*/
+            align-content: start;  /*vertically center/start/end at parent*/
+            flex-basis: 400px;
+        }
+
+        /*order:0*/
+        #employee-card>div:first-child{
+            order: 4;
+        }
+        #employee-card>div:nth-child(2){
+            order: 5;
+        }
+        #employee-card>div:nth-child(3){
+            order: 2;
+        }
+        #employee-card>div:nth-child(4){
+            order: 1;
+        }
+        #employee-card>div:last-child{
+            order: 3;
+        }
+        /*order : 1,2,3 
+        child : 3, 4 5*/
+
+
+    </style>
+</head>
+<body>
+   <article id="employee-card">
+        <div>
+            <h5>111</h5>
+            <img class="employeepic" alt="employee1" src="https://thumbs.dreamstime.com/b/profile-picture-caucasian-male-employee-posing-office-happy-young-worker-look-camera-workplace-headshot-portrait-smiling-190186649.jpg">
+            <figcaption>Manish Shah</figcaption>
+            <p>
+                He is Test Engineer having 5 years of experience
+            </p>
+        </div>
+        <div>
+            <h5>112</h5>
+            <img class="employeepic" alt="employee1" src="https://thumbs.dreamstime.com/b/profile-picture-caucasian-male-employee-posing-office-happy-young-worker-look-camera-workplace-headshot-portrait-smiling-190186649.jpg">
+            <figcaption>Rajeev Shah</figcaption>
+            <p>
+                He is Test Engineer having 4 years of experience
+            </p>
+        </div>
+        <div>
+            <h5>113</h5>
+            <img class="employeepic" alt="employee1" src="https://thumbs.dreamstime.com/b/profile-picture-caucasian-male-employee-posing-office-happy-young-worker-look-camera-workplace-headshot-portrait-smiling-190186649.jpg">
+            <figcaption>Rajeev Shah</figcaption>
+            <p>
+                He is Test Engineer having 4 years of experience
+            </p>
+        </div>
+        <div>
+            <h5>114</h5>
+            <img class="employeepic" alt="employee1" src="https://thumbs.dreamstime.com/b/profile-picture-caucasian-male-employee-posing-office-happy-young-worker-look-camera-workplace-headshot-portrait-smiling-190186649.jpg">
+            <figcaption>Rajeev Shah</figcaption>
+            <p>
+                He is Test Engineer having 4 years of experience
+            </p>
+        </div>
+        <div>
+            <h5>115</h5>
+            <img class="employeepic" alt="employee1" src="https://thumbs.dreamstime.com/b/profile-picture-caucasian-male-employee-posing-office-happy-young-worker-look-camera-workplace-headshot-portrait-smiling-190186649.jpg">
+            <figcaption>Rajeev Shah</figcaption>
+            <p>
+                He is Test Engineer having 4 years of experience
+            </p>
+        </div>
+      
+   </article> 
+</body>
+</html>

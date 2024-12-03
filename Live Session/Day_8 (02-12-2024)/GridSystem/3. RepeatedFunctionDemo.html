@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #gridcontainer{
+        width: 50%;
+        height: 300px;
+        display: grid;
+        border: 2px solid red;
+        /*1 40px 2 50px 3 auto 4 50px 5 40px 6*/
+        grid-template-columns: repeat(3, auto)
+        
+    } 
+       #gridcontainer>*{
+        border: 2px solid green;
+       }
+
+    </style>
+</head>
+<body>
+    <div id="gridcontainer">
+        <div>India</div>
+        <div>is</div>
+        <div>my</div>
+        <div>country</div>
+        <div>I</div>
+        <div>India</div>
+        <div>is</div>
+        <div>my</div>
+        <div>country</div>
+        <div>I</div>
+        <div>India</div>
+        <div>is</div>
+        <div>my</div>
+        <div>country</div>
+        <div>I</div>
+    </div>
+</body>
+</html>
