@@ -1,0 +1,68 @@
+<!-- Assignment 2 Dec: select last child of article and use align-self on that -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        #employee-card {
+            display: flex;  
+            height: 800px; 
+            border: 1px solid black;
+            justify-content: center;
+        }
+
+        .employeepic{
+            width: 80px;
+            height: 50px;
+            margin: 150px;
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .employeepic:nth-child(1) {
+            align-self: flex-start;
+            
+        }
+
+        .employeepic:nth-child(2) {
+            align-self: center; 
+        }
+
+        .employeepic:last-child {
+            align-self: flex-end;
+        }  
+
+</style>
+
+<body>
+    <article id="employee-card">
+        <div class="employeepic">
+            <img  alt="employee1" height="300px" width="300px" src="./Images/image_1.jpg">
+
+        </div>
+
+        <div class="employeepic">
+            <img  alt="employee2" height="300px" width="300px" src="./Images/image_2.jpg">
+        </div>
+
+        <div class="employeepic">
+
+            <img alt="employee3" height="300px" width="300px" src="./Images/image_3.jpg">
+        </div>
+
+    </article>
+
+
+</body>
+
+</html>

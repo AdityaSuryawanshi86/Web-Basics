@@ -1,0 +1,56 @@
+<!-- Assignment 21 Dec:  use short hand property flex flow for flex-direction and flex-wrap -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    .employeepic {
+        height: 200px;
+        width: 200px;
+    }
+
+    #employee-card>div {
+        background-color: aqua;
+        border: 2px solid black;
+    }
+
+    #employee-card {
+        height: 1000px;
+        border: 4px double green;
+        display: flex;
+
+        /* short property  */
+        flex-flow: column wrap;
+
+        text-align: center;
+
+        /* flex-wrap: wrap;
+        flex-direction: row; */
+        justify-content: center;
+        align-items: center;
+     }
+
+</style>
+</head>
+<body>
+    <article id="employee-card">
+        <div class="employeepic"> Data Science </div>
+
+        <div class="employeepic"> .Net </div>
+
+        <div class="employeepic"> QA </div>
+
+        <div class="employeepic"> Data Analytics </div>
+
+        <div class="employeepic"> DSA </div>
+
+        <div class="employeepic"> Azure </div>
+    </article>
+</body>
+</html>
