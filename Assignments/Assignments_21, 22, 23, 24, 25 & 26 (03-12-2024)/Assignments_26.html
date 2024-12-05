@@ -1,0 +1,54 @@
+<!-- // Assignment - Create 3 text fields for firstname, middlename and last name. 
+// Given common name and unique ids. Access these fields using getElementsByName. 
+// apply blue border for them Access above fields using id, given different backgrounds 
+// for each field -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        [type=text]{
+            margin: 5px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" name="ename" id="fname" placeholder="First Name">
+        <input type="text" name="ename" id="mname" placeholder="Midddle Name">
+        <input type="text" name="ename" id="lname" placeholder="Last Name">
+    </div>
+    <script>
+        const ename = document.getElementsByName('ename')
+        console.log(ename)
+        for (let a of ename) {
+            a.style.cssText = "border:4px solid blue"
+        }
+
+
+        const fname = document.getElementById("fname");
+        console.log(fname);
+        fname.style.background = "red"
+
+        const mname = document.getElementById("mname");
+        console.log(mname);
+        mname.style.background = "yellow"
+
+        const lname = document.getElementById("lname");
+        console.log(lname);
+        lname.style.background = "lightgreen"
+    </script>
+</body>
+
+</html>

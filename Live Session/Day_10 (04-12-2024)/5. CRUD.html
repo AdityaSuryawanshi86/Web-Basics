@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <style>
+        .dimensions{
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+        }
+        .colors{
+            background: yellow;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="dimensions" id="indiadiv">
+       <b>INDIA</b>
+    </div>
+    <button type="button" onclick="removeEle()">REMOVE DIV</button>
+    <script>
+        const h2Node=document.createElement("h2");
+        h2Node.textContent="DOM CRUD";
+        h2Node.setAttribute("id", "heading1");
+        const h3Node=document.createElement("h3");
+        h3Node.textContent="CRUD operations";
+        h3Node.setAttribute("id", "heading2");
+        h3Node.setAttribute("class", "heading crud");
+        document.body.prepend(h2Node,h3Node);   // appendChild, append, prepend
+        const divNode=document.getElementById("indiadiv");
+      //  divNode.setAttribute("class", "colors");
+        divNode.classList.add("colors");
+        console.log(document.body.children); // childNodes
+        console.log(divNode.children);
+        
+        function removeEle(){
+            divNode.remove(); // call remove on same node whicn to remove
+            //document.body.removeChild(divNode); // call removeChild on parent and pass childnode to remove
+        }
+
+        const inputNode=document.createElement("input");
+        inputNode.type="text";
+        inputNode.name="myname";
+        inputNode.value="hari";
+        inputNode.id="myname"  // alternate approach for setAttribute
+        inputNode.classList.add("name");
+        divNode.before(inputNode);  // before, after
+    </script>
+</body>
+</html>
