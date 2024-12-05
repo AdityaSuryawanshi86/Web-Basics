@@ -1,0 +1,24 @@
+<!-- Assignment - take 2 numbers from user from prompt box when user clicks on ADD button.
+      display the addition on console -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Box Assignment</title>
+</head>
+<body>
+    <h3>Open Console</h3>
+    <button onclick="showPrompt()">Add num</button>
+    <script>
+        function showPrompt(){
+            // const pagenum=window.prompt("Please enter page number where you have reached");
+            const one=parseInt(window.prompt("Enter the 1st no."))
+            const two=parseInt(window.prompt("Enter the 2nd no."))
+            console.log('The addition of 2 no.',one+two)console.log("---------------")
+        }
+    </script>
+</body>
+</html>
