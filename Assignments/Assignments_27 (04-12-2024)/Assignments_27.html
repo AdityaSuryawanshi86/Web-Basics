@@ -14,6 +14,40 @@ Display the array  -->
     <title>Document</title>
 </head>
 <body>
+
+    <input type="checkbox" class="check" id="course1" value="SQL" onclick="updatearray()"> SQL<br>
+    <input type="checkbox" class="check" id="course2" value="Python" onclick="updatearray()"> Python<br>
+    <input type="checkbox" class="check" id="course3" value="Tableau" onclick="updatearray()"> Tableau<br>
+    <input type="checkbox" class="check" id="course4" value="Adv Excel" onclick="updatearray()"> Adv Excel<br>
+
+    <div>
+        <h1>O/P</h1>
+
+        <p id="ans"> </p>
+    </div>
+
+    <script>
+        
+        function updatearray()
+        {
+            const inputNode=document.getElementsByClassName('check');
+
+        let courses=[];
+            for(let inp of inputNode ){
+            if(inp.checked){
+                courses.push(inp.value);
+            }
+        }
+
+        console.log(courses);
+
+        const pNode=document.getElementById('ans');
+        pNode.textContent=courses;
+
+        }
+        
+    </script>
+
     
 </body>
 </html>

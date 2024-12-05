@@ -13,8 +13,10 @@
         <input type="text" name="common-name" onfocus="borderChange()" onblur="borderChange()" id="mname"><br><br>
         <label for="lname">Last Name : </label>
         <input type="text" name="common-name" onfocus="borderChange()" onblur="borderChange()" id="lname"><br><br>
+
+
         <input type="password" placeholder="enter your password" id="pass">
-        <input type="checkbox" onchange="togglePass()" id="showp"> <label for="showp">:Show password</label><br><br>
+        <input type="checkbox" onchange="togglePass()"> <label>:Show password</label><br><br>
         <label>Select Gender</label>
         <input type="radio" name="gender"  id="gender1" value="male"><label for="gender1">MALE</label>
         <input type="radio" name="gender"  id="gender2" value="female"><label for="gender2">FEMALE</label> <br><br>
@@ -23,11 +25,13 @@
     <script>
         const oldBorder="2px solid blue";
         const focusBorder="5px double blue";
+
         document.getElementById("fname").style.backgroundColor="lightpink"
         document.getElementById("mname").style.backgroundColor="lightgreen"
         document.getElementById("lname").style.backgroundColor="lightblue"
 
         const cname = document.getElementsByName("common-name")
+
         for (let name of cname){
             name.style.border=oldBorder;
         }
@@ -41,6 +45,8 @@
                 targetNode.style.border=oldBorder;
             }
         }
+
+
         const passNode=document.getElementById("pass"); // DOM method
         console.log(passNode.placeholder); //DOM attribute access
         
@@ -54,6 +60,8 @@
                  passNode.type="password"   // DOM attribite value change
             }
         }
+
+
         const radioNodes=document.getElementsByName("gender");
         for(let radioNode of radioNodes){
             radioNode.addEventListener('change', ()=>selectGender())

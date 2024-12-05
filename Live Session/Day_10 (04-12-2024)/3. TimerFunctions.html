@@ -13,23 +13,27 @@
 <body >
     <img  height="300" width="300" src="./nature_1.jpeg" alt="javascript images" id="js">
     <figcaption id="imagetitle">nature</figcaption>
+
     <script>
         const imageNode=document.getElementById("js")
         const captionNode=document.getElementById("imagetitle");
         let title=captionNode.textContent; // DOM property
         console.log(imageNode);
+
         imageNode.addEventListener("mouseover", ()=>{
-            imageNode.src="./nature_3.jpeg"
+            imageNode.src="./nature_3.jpg"
             captionNode.textContent="Box Shadow"
         })
+
         imageNode.addEventListener("mouseout", ()=>{
             imageNode.src="./nature_1.jpeg"
             captionNode.textContent=title;
         })
-      /*   window.setTimeout(()=>{
-            imageNode.src="../CSS/Images/box shadow.gif"
-            captionNode.textContent="Box Shadow"
-        }, 5000) */
+
+        // window.setTimeout(()=>{
+        //     imageNode.src="./nature_3.jpg"
+        //     captionNode.textContent="Box Shadow"
+        // }, 3000) 
 
         const images=[
             {
