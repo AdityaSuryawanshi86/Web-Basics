@@ -1,0 +1,58 @@
+<!-- Assignment Dec-6 : Replace code of javascript in HTMLTextDemo with jquery code -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHTML TEXT Demo</title>
+</head>
+
+<body>
+    <p id="india">India is my country
+        <small>India is my country</small>
+        <b>I love my <i>country</i> India </b>
+    </p>
+    <button id="btn" class="button">PASTE</button>
+    <p id="blank1">
+
+    </p>
+    <p id="blank2">
+
+    </p>
+    <p id="blank3">
+
+    </p>
+
+    <p id="blank4">
+
+    </p>
+    <script src="./jquery-3.7.1.js"></script>
+    <script>
+        const pNode =  $("#india")
+        const pNode2 = $("#blank1")
+        const pNode3 = $("#blank2")
+        const pNode4 = $("#blank3")
+        const pNode5 = $("#blank4")
+        // adding class to existing class
+        
+        $('#btn').addClass("newButton")
+
+        $("#btn").click(function () {
+
+            pNode2.text($(pNode).text());       // Plain text without tags
+            pNode3.text($(pNode)[0].innerText); // Visible text from the DOM
+            pNode4.html($(pNode).html());       // Inner HTML with tags
+            pNode5.html("<b>" + $(pNode).text() + "</b>"); // Wrap plain text in bold tags
+        }); 
+
+
+
+
+    </script>
+</body>
+
+</html>
