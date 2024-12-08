@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img2{
+            display: none;
+        }
+    </style>
+
+    <script src="./Scripts/jquery-3.7.1.js"></script>
+    <script>
+       $(document).ready(function(){
+            $("#img1,div").fadeTo(3000, 0.5);
+            $("#img2").fadeTo(3000, 0.5);
+       });
+    </script>
+</head>
+<body >
+    <img id="img1" src="./Images/nature_1.jpeg" alt="nature">
+    <img id="img2" src="./Images/nature_1.jpeg" alt="nature">
+    <div>
+        HI
+    </div>
+   
+</body>
+</html>
