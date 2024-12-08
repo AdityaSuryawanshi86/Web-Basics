@@ -9,57 +9,62 @@
 
 
 class BankAccount {
-    constructor(accountNumber, customerId, type, balance) 
-    {
-      this.accountNumber = accountNumber;
-      this.customerId = customerId;
-      this.type = type;
-      this.balance = balance;
-    }
-  
-    //  deposit 
-    deposit(amount) {
-      if (amount > 0) {
-        this.balance += amount;
-        console.log(`₹${amount} deposited successfully. New balance: ₹${this.balance}`);
-      } else {
-        console.log('Invalid deposit amount.');
-      }
-    }
-  
-    // withdraw 
-    withdraw(amount) {
-      if (amount > 0 && amount <= this.balance) {
-        this.balance -= amount;
-        console.log(`₹${amount} withdrawn successfully. New balance: ₹${this.balance}`);
-      } else if (amount > this.balance) {
-        console.log('Insufficient balance.');
-      } else {
-        console.log('Invalid withdrawal amount.');
-      }
+  constructor(accountNumber, customerId, type, balance) {
+    this.accountNumber = accountNumber;
+    this.customerId = customerId;
+    this.type = type;
+    this.balance = balance;
+  }
+
+  //  deposit 
+  deposit(amount) {
+    if (amount > 0) {
+      this.balance += amount;
+      console.log(`\n₹${amount} deposited successfully. \nNew balance: ₹${this.balance}`);
+    } else {
+      console.log('\nEnter Correct Amount.');
     }
   }
-  
-  //  objects
-  const acc1 = new BankAccount(101, '001', 'Savings', 50000);
-  const acc2 = new BankAccount(102, '002', 'Current', 100000);
-  const acc3 = new BankAccount(103, '003', 'Savings', 3000);
-  
-  // array for iteration
-  const accounts = [acc1, acc2, acc3];
-  
-  // Iterate through the objects using a `for-in` loop
-  accounts.forEach((account, index) => {
-    console.log(`\nDetails of Account ${index + 1}:`);
-    for (let key in account) {
-      console.log(`${key}: ${account[key]}`);
+
+  // withdraw 
+  withdraw(amount) {
+    if (amount > 0 && amount <= this.balance) {
+      this.balance -= amount;
+      console.log(`\n₹${amount} withdrawn successfully. \nNew balance: ₹${this.balance}`);
+    } else if (amount > this.balance) {
+      console.log('\nInsufficient balance.');
+    } else {
+      console.log('\nEnter Correct Amount.');
     }
-  });
-  
-  //   withdraw operations
-  acc1.deposit(2000);
-  acc1.withdraw(1000);
-  
-  acc2.deposit(5000);
-  acc2.withdraw(200000); //  insufficient balance
-  
+  }
+}
+
+//  objects
+const acc1 = new BankAccount(251, '2551', 'Current', 10000);
+const acc2 = new BankAccount(252, '2552', 'Current', 20000);
+const acc3 = new BankAccount(253, '2553', 'Current', 30000);
+
+
+// array for iteration
+const accounts = [acc1, acc2, acc3];
+
+
+// Iterate through the objects using a `for-in` loop
+accounts.forEach((account, index) => {
+  console.log(`\nDetails of Account ${index + 1}:`);
+  for (let key in account) {
+    console.log(`${key}: ${account[key]}`);
+  }
+});
+
+
+//   withdraw operations
+acc1.deposit(50000);
+acc1.withdraw(20000);
+
+acc2.deposit(5000);
+acc2.withdraw(200000); //  insufficient balance
+
+
+acc3.deposit(3000);
+acc3.withdraw(000); //  Enter correct Amount
