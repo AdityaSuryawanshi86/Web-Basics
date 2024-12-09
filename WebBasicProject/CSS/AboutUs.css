@@ -1,0 +1,80 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-image: url("../Images/AboutUs.jpg");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;  /* Stack elements vertically */
+    justify-content: flex-start; /* Align items from the top */
+    height: 100vh;
+    background-color: #423d3d; /* Optional: Set background color */
+    padding: 20px;
+}
+
+/* Title styling */
+h1 {
+    text-align: left;  /* Align title to the left */
+    margin-bottom: 20px;
+    font-size: 2.5rem; /* Adjust font size as needed */
+    color: #ffffff;
+    margin-top: 50px; /* Space at the top */
+    width: 100%; /* Ensure the title spans the full width */
+}
+
+/* Container to hold the content */
+.div1{
+    width: 1000px;  /* Set width to 80% of the body */
+    max-width: 1000px;  /* Optional: Limit max width for large screens */
+    padding: 20px;
+
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 4px 10px rgb(253, 247, 247); /* Optional: Add a subtle shadow */
+    margin-top: 30px; /* Space between title and content */
+    margin-left: 0; /* Align the content container to the left */
+    text-align: left; /* Left-align text inside the div */
+}
+
+/* Paragraph styling */
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: center;  /* Center the buttons horizontally */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Button styling */
+.btn {
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border: none; /* Remove border */
+    border-radius: 5px; /* Keep rounded corners */
+    cursor: pointer;
+    margin: 0 15px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #218838;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.btn:active {
+    transform: scale(1); /* Return to normal size on click */
+}
