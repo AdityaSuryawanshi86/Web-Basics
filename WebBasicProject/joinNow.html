@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
+            background-image: url("./Images/joinNow_6.jpg");
+            background-size:cover;
             font-family: Arial, sans-serif;
-            background-color: #d8d8d5;
+            background-color: #379c48;
             margin: 0;
             padding: 0;
             display: flex;
@@ -21,24 +23,30 @@
         }
 
         .form-container {
-            background-color: #91a3fc;
+            /* background-color: #4adda5; */
+            box-shadow: 10px 10px 50px white;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 600px;
+            width: 500px;
+            margin-left: auto; /* Pushes the container to the right */
+            margin-right: 0;   /* Ensures no margin on the right */
+
         }
 
         h1 {
             text-align: center;
             margin-bottom: 20px;
+            color: #fff;
         }
 
         .form-group {
             margin-bottom: 15px;
+            color: #fff;
         }
 
         .form-group label {
+            color: #b90606;
             display: block;
             font-weight: bold;
             margin-bottom: 5px;
@@ -48,9 +56,12 @@
         .form-group textarea {
             width: 100%;
             padding: 10px;
+            color: white;
             border: 1px solid #ddd;
             border-radius: 4px;
             box-sizing: border-box;
+            background-color: transparent; /* Remove white background */
+            
         }
 
         .form-group textarea {
@@ -59,7 +70,7 @@
 
         .form-group button[type="submit"] {
             background-color: #28a745;
-            color: #fff;
+            color: #0c0505;
             border: none;
             cursor: pointer;
             font-size: 16px;
@@ -77,6 +88,7 @@
         .contact-details {
             margin-top: 30px;
             text-align: center;
+            color: whitesmoke;
         }
 
         .contact-details p {
@@ -90,7 +102,7 @@
         .social-icons a {
             margin: 0 10px;
             text-decoration: none;
-            color: #333;
+            color: whitesmoke;
             font-size: 24px;
         }
 
@@ -108,35 +120,35 @@
 <body>
 
     <div class="form-container">
-        <h1>Register with Us</h1>
+        <h1> <i> <u> Register with Us </u> </i> </h1>
         <form id="registrationForm" action="#" method="POST" onsubmit="return validateForm()">
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Enter Name" required>
                 <div id="nameError" class="error"></div>
             </div>
 
             <div class="form-group">
                 <label for="contact">Contact Number:</label>
-                <input type="tel" id="contact" name="contact" required>
+                <input type="tel" id="contact" name="contact" placeholder="+91 0000000000" required>
                 <div id="contactError" class="error"></div>
             </div>
 
             <div class="form-group">
                 <label for="gmail">Gmail:</label>
-                <input type="email" id="gmail" name="gmail" required>
+                <input type="email" id="gmail" name="gmail" placeholder="eg. abc@gmail.com" required>
                 <div id="gmailError" class="error"></div>
             </div>
 
             <div class="form-group">
                 <label for="address">Address:</label>
-                <textarea id="address" name="address" rows="4" required></textarea>
+                <textarea id="address" name="address" rows="4" placeholder="Flat no. Area Landmark" required></textarea>
                 <div id="addressError" class="error"></div>
             </div>
 
             <div class="form-group">
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <textarea id="message" name="message" rows="4" placeholder="Any Medical History" required></textarea>
                 <div id="messageError" class="error"></div>
             </div>
 
@@ -145,7 +157,7 @@
             </div>
 
             <div>
-                <a href="./index.html" style="color: #333; place-items: center;" >Back to Home</a>
+                <a href="./index.html" style="color: whitesmoke; place-items: left;" >Back to Home</a>
             </div>
         </form>
 

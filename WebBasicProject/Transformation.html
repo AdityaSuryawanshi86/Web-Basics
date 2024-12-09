@@ -9,11 +9,12 @@
 </head>
 
 <body>
-    <h1><i> Hulk N Power: Transformations </i></h1>
+    <h1><i> <u> Hulk N Power: Transformations </u> </i></h1>
     <div class="card-container">
         <!-- Card 1 -->
         <div class="card">
-            <img src="./Images/transformed_3.jpg" alt="Card Image 1">
+            <figure class="Men" id="Client1">
+            <img src="./Images/transformed_3.jpg" alt="Card Image 1"> </figure>
             <div class="card-content">
                 <h3>Amir</h3>
                 <p> <b>Before: </b> "I struggled to stay fit and lacked motivation. My energy levels were low, and I couldn't commit to a routine." </p>
@@ -24,7 +25,8 @@
 
         <!-- Card 2 -->
         <div class="card">
-            <img src="./Images/transformed_2.jpg" alt="Card Image 2">
+            <figure class="Men" id="Client2">
+            <img src="./Images/transformed_2.jpg" alt="Card Image 2"> </figure>
             <div class="card-content">
                 <h3>Bhai Jaan</h3>
                 <p> <b>Before: </b> "I felt stuck in my routine and wasn't seeing any progress in my health. I needed a change." </p>
@@ -35,7 +37,8 @@
 
         <!-- Card 3 -->
         <div class="card">
-            <img src="./Images/transformed_1.jpg" alt="Card Image 3">
+            <figure class="Men" id="Client3">
+            <img src="./Images/transformed_1.jpg" alt="Card Image 3"> </figure>
             <div class="card-content">
                 <h3>Shahrukh</h3>
                 <p> <b>Before: </b> "I was always tired and didn't know where to start with my fitness journey." </p>
@@ -47,10 +50,20 @@
 
     <!-- Buttons for navigation -->
     <div class="button-container">
-        <a href="./About.html" target="_blank"></a>
+        <a href="./About.html" target="_blank">
         <button class="btn" id="back">Back</button></a>
         <!-- <button class="btn" id="next">Next</button> -->
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script >
+            $("figure").hide(2000).show(1000).fadeOut(500).fadeIn(500);
+
+    </script>
+
+
 
 </body>
 

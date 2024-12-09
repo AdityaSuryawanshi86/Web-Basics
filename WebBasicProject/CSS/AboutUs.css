@@ -7,7 +7,7 @@
 
 /* Body styling */
 body {
-    background-image: url("../Images/AboutUs.jpg");
+    background-image: url("../Images/AboutUs3.jpg");
     background-size: cover;
     font-family: Arial, sans-serif;
     display: flex;
@@ -20,12 +20,13 @@ body {
 
 /* Title styling */
 h1 {
-    text-align: left;  /* Align title to the left */
+    text-align: center;  /* Align title to the left */
     margin-bottom: 20px;
-    font-size: 2.5rem; /* Adjust font size as needed */
+    font-size: 3.5rem; /* Adjust font size as needed */
     color: #ffffff;
     margin-top: 50px; /* Space at the top */
     width: 100%; /* Ensure the title spans the full width */
+    text-shadow: 5px 5px #655c72;
 }
 
 /* Container to hold the content */
@@ -46,7 +47,7 @@ p {
     line-height: 1.6;
     margin-bottom: 15px;
     font-size: 1.3rem;
-    color: #ffffff;
+    color: #f3ecfc;
 }
 
 /* Button container */

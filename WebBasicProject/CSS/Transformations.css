@@ -7,8 +7,10 @@
 
 /* Body styling */
 body {
+    /* background-image: url("../Images/transform_7.jpg");
+    background-size: cover; */
     font-family: Arial, sans-serif;
-    background-color: #796f6f;  /* Black background for the body */
+    background-color: #84a180;  /* Black background for the body */
     color: #fff;  /* White text color for visibility */
     display: flex;
     flex-direction: column;  /* Stack elements vertically */
@@ -23,10 +25,11 @@ body {
 h1 {
     text-align: center;  /* Center the title */
     margin-bottom: 20px;  /* Space below the title */
-    font-size: 2.5rem;  /* Adjust font size as needed */
-    color: #fff;  /* White text for the title */
+    font-size: 3.5rem;  /* Adjust font size as needed */
+    color: #030e0173;  /* White text for the title */
     width: 100%;  /* Ensure the title spans the full width */
-    margin-top: 80px;
+    margin-top: 50px;
+    text-shadow: 5px 5px rgb(154, 206, 35);
 }
 
 /* Container for the cards */
@@ -37,13 +40,13 @@ h1 {
     width: 80%;  /* You can adjust the width as needed */
     max-width: 1200px;  /* Optional: Limit the container size */
     flex-wrap: wrap;  /* Allow cards to wrap on smaller screens */
-    margin-top: 100px;
+    margin-top: 80px;
     
 }
 
 /* Styling for each card */
 .card {
-    background-color: #6b4949;
+    background-color: #496b69;
     border-radius: 15px;  /* Curved borders for the card */
     overflow: hidden;
     width: 30%;  /* Ensure each card is equally sized */
@@ -79,7 +82,7 @@ h1 {
 /* Hover effects */
 .card:hover {
     transform: translateY(-10px);  /* Slightly lift the card */
-    box-shadow: 0px 8px 80px #b6acac;  /* Add stronger shadow */
+    box-shadow: 15px 15px 40px #022e36;  /* Add stronger shadow */
     border-radius: 25px;  /* Increase border radius on hover */
 }
 
