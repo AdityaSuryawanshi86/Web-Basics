@@ -1,58 +1,67 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Body styling */
 body {
-    /* background-image: url("../Images/transform_7.jpg");
-    background-size: cover; */
+    background-image: url("../Images/transform_11.jpg");
+    background-size: cover;
     font-family: Arial, sans-serif;
-    background-color: #84a180;  /* Black background for the body */
-    color: #fff;  /* White text color for visibility */
+    background-color: #dadbda;
+    color: #fff;
     display: flex;
-    flex-direction: column;  /* Stack elements vertically */
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;  /* Center align items horizontally */
-    min-height: 100vh;
+    align-items: left;
+    height: 50%;
+    /* min-height: 100vh; */
     padding: 20px;
 }
 
-
 /* Title styling */
 h1 {
-    text-align: center;  /* Center the title */
-    margin-bottom: 20px;  /* Space below the title */
-    font-size: 3.5rem;  /* Adjust font size as needed */
-    color: #030e0173;  /* White text for the title */
-    width: 100%;  /* Ensure the title spans the full width */
-    margin-top: 50px;
-    text-shadow: 5px 5px rgb(154, 206, 35);
+    /* text-align: left;
+    margin-bottom: 20px;
+    font-size: 3.0rem;
+    color: #f3eeeefd;
+    margin-top: 1px; */
+
+    text-align: center;  /* Align title to the left */
+    margin-bottom: 20px;
+    font-size: 3.5rem; /* Adjust font size as needed */
+    color: #ffffff;
+    margin-top: 1px; /* Space at the top */
+    width: 100%; /* Ensure the title spans the full width */
+    text-shadow: 5px 5px #655c72;
 }
 
 /* Container for the cards */
 .card-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 20px;
-    width: 80%;  /* You can adjust the width as needed */
-    max-width: 1200px;  /* Optional: Limit the container size */
-    flex-wrap: wrap;  /* Allow cards to wrap on smaller screens */
+    width: 100%;
+    max-width: 1200px;
     margin-top: 80px;
-    
+    overflow: hidden;
+    animation: marquee 10s linear infinite; /* Marquee effect */
+}
+
+/* Marquee effect: Slide from right to left */
+@keyframes marquee {
+    0% {
+        transform: translateX(80%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /* Styling for each card */
 .card {
     background-color: #496b69;
-    border-radius: 15px;  /* Curved borders for the card */
+    border-radius: 15px;
     overflow: hidden;
-    width: 30%;  /* Ensure each card is equally sized */
+    width: 300px;  /* Adjust width of each card */
     transition: transform 0.3s, box-shadow 0.3s, border-radius 0.3s;
-    margin-bottom: 20px; /* Space between cards on small screens */
-    padding: 10px; /* Padding around the card content */
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 /* Card image */
@@ -60,13 +69,13 @@ h1 {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    margin-bottom: 15px;  /* Space below the image */
-    border-radius: 10px;  /* Optional: Rounded corners for images */
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 /* Card content */
 .card-content {
-    padding: 20px;  /* Add padding inside the card */
+    padding: 20px;
 }
 
 .card-content h3 {
@@ -79,24 +88,14 @@ h1 {
     color: #0a0a0a;
 }
 
-/* Hover effects */
+/* Hover effects for cards */
 .card:hover {
-    transform: translateY(-10px);  /* Slightly lift the card */
-    box-shadow: 15px 15px 40px #022e36;  /* Add stronger shadow */
-    border-radius: 25px;  /* Increase border radius on hover */
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.3); /* Adding a subtle shadow */
+    border-radius: 25px;  /* Increased border radius on hover */
+    transition: 0.3s ease-in-out;
 }
 
-/* Responsive design for smaller screens */
-@media screen and (max-width: 768px) {
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 80%;  /* Adjust card width for smaller screens */
-    }
-}
 /* Button container */
 .button-container {
     margin-top: 40px;
@@ -123,4 +122,16 @@ h1 {
 
 .btn:active {
     transform: scale(1); /* Return to normal size on click */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%; /* Adjust card width for smaller screens */
+    }
 }
