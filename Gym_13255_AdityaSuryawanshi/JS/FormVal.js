@@ -13,6 +13,7 @@ function validateForm() {
     const nameRegex = /^[A-Za-z\s]+$/;
     if (!nameRegex.test(name)) {
         document.getElementById('nameError').innerHTML = 'Please enter a valid name (letters only).';
+        
         valid = false;
     }
 

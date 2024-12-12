@@ -109,8 +109,8 @@
         }
 
         .error {
-            color: rgb(245, 237, 237);
-            font-size: 1.9rem;
+            color: red;
+
         }
 
         a {
@@ -127,31 +127,31 @@
         <form id="registrationForm" action="#" method="POST" onsubmit="return validateForm()">
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter Name" required>
+                <input type="text" id="name" name="name" placeholder="Enter Name">
                 <div id="nameError" class="error"></div>
             </div>
 
             <div class="form-group">
                 <label for="contact">Contact Number:</label>
-                <input type="tel" id="contact" name="contact" placeholder="+91 0000000000" required>
+                <input type="tel" id="contact" name="contact" placeholder="+91 0000000000">
                 <div id="contactError" class="error"></div>
             </div>
 
             <div class="form-group">
                 <label for="gmail">Gmail:</label>
-                <input type="email" id="gmail" name="gmail" placeholder="eg. abc@gmail.com" required>
+                <input type="email" id="gmail" name="gmail" placeholder="eg. abc@gmail.com">
                 <div id="gmailError" class="error"></div>
             </div>
 
             <div class="form-group">
                 <label for="address">Address:</label>
-                <textarea id="address" name="address" rows="4" placeholder="Flat no. Area Landmark" required></textarea>
+                <textarea id="address" name="address" rows="4" placeholder="Flat no. Area Landmark"></textarea>
                 <div id="addressError" class="error"></div>
             </div>
 
             <div class="form-group">
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" placeholder="Any Medical History" required></textarea>
+                <textarea id="message" name="message" rows="4" placeholder="Any Medical History"></textarea>
                 <div id="messageError" class="error"></div>
             </div>
 
